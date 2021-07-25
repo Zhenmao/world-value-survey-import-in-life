@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World Value Survey - Important In Life</title>
+    <!-- Google Fonts CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body onclick>
+    <header class="container grid">
+      <h1>
+        What's<br />
+        Important<br />
+        in Life
+      </h1>
+      <div class="stack">
+        <p>
+          The World Values Survey studies the social, political, economic,
+          religious and cultural values of people in the world. The newest wave
+          of the survey took place in 2017-2021. The first question in the
+          survey asks the respondents to rate how important the following six
+          aspects are in their life:
+        </p>
+        <div id="aspects-legend"></div>
+        <p>
+          They rate each aspect as very important(4), rather important(3), not
+          very important(2) or not important at all(1).
+        </p>
+      </div>
+    </header>
+    <main class="container grid">
+      <div class="stack">
+        <div>
+          <label for="sort-control">Sort countries/territories by</label>
+          <select id="sort-control"></select>
+        </div>
+        <div>
+          <label for="scores-by-aspect">Brush to filter scores by aspect</label>
+          <p>Each vertical line represents one country</p>
+          <div id="scores-by-aspect"></div>
+        </div>
+      </div>
+      <div>
+        <p>
+          Each row represents one country. Each circle within each row represent
+          one aspect
+        </p>
+        <div id="scores-by-country"></div>
+      </div>
+    </main>
+    <footer class="container">
+      <div>
+        Data source: Inglehart, R., C. Haerpfer, A. Moreno, C. Welzel, K.
+        Kizilova, J. Diez-Medrano, M. Lagos, P. Norris, E. Ponarin & B. Puranen
+        et al. (eds.). 2020. World Values Survey: Round Seven - Country-Pooled
+        Datafile Version:
+        <a
+          href="https://www.worldvaluessurvey.org/WVSDocumentationWV7.jsp"
+          target="_blank"
+          >https://www.worldvaluessurvey.org/WVSDocumentationWV7.jsp</a
+        >. Madrid: JD Systems Institute.
+      </div>
+    </footer>
+    <!-- D3 JS -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <!-- JS -->
+    <script src="js/process-data.js"></script>
+    <script src="js/aspects-legend.js"></script>
+    <script src="js/select-control.js"></script>
+    <script src="js/tooltip.js"></script>
+    <script src="js/scores-by-aspect.js"></script>
+    <script src="js/scores-by-country.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
