@@ -1,4 +1,4 @@
-# [World Value Survey Import In Life](https://zhenmao.github.io/world-value-survey-import-in-life/)
+# [World Value Survey Import In Life](https://zhenmao.github.io/world-value-survey-important-in-life/)
 
 ### References
 
